@@ -1,0 +1,64 @@
+{
+  "best_model": "Random Forest",
+  "threshold": 0.51,
+  "tuned_test": {
+    "accuracy": 0.9895,
+    "precision": 0.8983050847457628,
+    "recall": 0.7794117647058824,
+    "f1": 0.8346456692913385,
+    "roc_auc": 0.9785729509194983,
+    "pr_auc": 0.8511271683877051
+  },
+  "models": {
+    "Logistic Regression": {
+      "accuracy": 0.854,
+      "precision": 0.1744186046511628,
+      "recall": 0.8823529411764706,
+      "f1": 0.2912621359223301,
+      "roc_auc": 0.9346684325904275,
+      "pr_auc": 0.46486666958365835,
+      "cv_f1": 0.27347010406881817,
+      "params": {
+        "clf__C": 100
+      }
+    },
+    "Decision Tree": {
+      "accuracy": 0.9825,
+      "precision": 0.7619047619047619,
+      "recall": 0.7058823529411765,
+      "f1": 0.732824427480916,
+      "roc_auc": 0.8490591888929485,
+      "pr_auc": 0.5478151260504202,
+      "cv_f1": 0.7514455782312925,
+      "params": {
+        "max_depth": null,
+        "min_samples_leaf": 1
+      }
+    },
+    "Random Forest": {
+      "accuracy": 0.99,
+      "precision": 0.9,
+      "recall": 0.7941176470588235,
+      "f1": 0.84375,
+      "roc_auc": 0.9785729509194983,
+      "pr_auc": 0.8511271683877051,
+      "cv_f1": 0.8178148503693811,
+      "params": {
+        "max_depth": null,
+        "min_samples_leaf": 1
+      }
+    }
+  },
+  "importances": {
+    "Type": 0.011539035674065475,
+    "Air temperature [K]": 0.059026150467732616,
+    "Process temperature [K]": 0.036584113875101666,
+    "Rotational speed [rpm]": 0.20320813826914713,
+    "Torque [Nm]": 0.18977452691304988,
+    "Tool wear [min]": 0.20615410629754283,
+    "Temp_diff": 0.08354517707813354,
+    "Power": 0.21016875142522687
+  },
+  "test_size": 2000,
+  "test_failures": 68
+}
